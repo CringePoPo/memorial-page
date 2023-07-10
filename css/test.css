@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;800;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cathedral");
+@import url("https://fonts.cdnfonts.com/css/copperplate-gothic-light");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ececec;
+}
+
+#topnav {
+  height: auto !important;
+}
+
+.sm-cross {
+  width: 20px;
+}
+
+.recent_block {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  background-color: #643419;
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.recent_block a {
+  padding: 0 15px 15px 0;
+  width: 120px;
+  margin-left: 60px;
+  align-self: flex-end;
+}
+.recent_block a span.more {
+  font-size: 16px;
+  color: #ccc;
+  transition: all 0.3s;
+}
+.recent_block a span.more:hover {
+  color: #fff;
+}
+
+.text_block {
+  padding: 15px;
+  position: relative;
+}
+.text_block span {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.text_block.name {
+  font-size: 30px;
+  color: #fff;
+}
+.text_block span.year, .text_block span.place {
+  font-size: 24px;
+  color: #ccc;
+}
+
+.memorial-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.bottom-title {
+  font-size: 20px !important;
+  bottom: 10px !important;
+}
+
+.slider-img {
+  width: 170px;
+  height: 200px;
+}
+.slider-img img {
+  height: 100%;
+  width: 170px;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(1);
+}
+
+.home {
+  position: relative;
+}
+.home .overlay {
+  background: rgba(0, 0, 0, 0.103);
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+}
+.home .top_section {
+  position: relative;
+  background: url(https://cdn.ghanaweb.com/memorial/assets/home_bg.jpg);
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  height: 340px;
+}
+.home .top_section .text_area h1 {
+  margin: -50px 0 35px;
+}
+
+.text_area {
+  position: absolute;
+  /* padding: 170px 0 0 120px; */
+  left: 100px;
+  top: 50%;
+  width: 35%;
+  z-index: 2;
+  font-family: serif;
+}
+.text_area h1 {
+  color: #ffe3bd;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Copperplate Gothic Light", sans-serif;
+}
+
+img.couple_hug {
+  position: absolute;
+  right: 120px;
+  bottom: 0;
+  width: 310px;
+  z-index: 2;
+}
+
+.recent-memo {
+  width: 100%;
+  background-color: #89644b;
+}
+.recent-memo .memorial-container {
+  padding: 3px 15px 15px 15px;
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+}
+.recent-memo .memorial-container .carousel {
+  display: flex;
+  width: 1200px;
+  gap: 15px;
+  animation: sliding 24s ease-in-out infinite;
+  margin-left: 30px;
+}
+.recent-memo .memorial-container .memorial-cta {
+  width: 35%;
+}
+.recent-memo .memorial-container .memorial-cta .memorial-title {
+  font-size: 32px;
+  font-family: "Copperplate Gothic Light", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+.recent-memo .memorial-container .memorial-cta p {
+  margin: 15px 0 25px 0;
+  font-size: 16px;
+  color: #fff;
+}
+.recent-memo .memorial-container .memorial-carousel {
+  width: 65%;
+}
+.recent-memo .memorial-container .memorial-carousel .carousel-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recent-memo .memorial-container .memorial-carousel .carousel-title h2 {
+  color: #fff;
+}
+.recent-memo .memorial-container .memorial-carousel .carousel-title a {
+  font-family: "Copperplate Gothic Light", sans-serif;
+  font-size: 18px;
+}
+.recent-memo .memorial-container .memorial-carousel .carousel-wrapper {
+  width: auto;
+  height: auto;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2); */
+  /* margin: 100px auto 20px; */
+}
+.recent-memo .memorial-container .memorial-carousel .carousel-container {
+  /* width: 400px; */
+  height: 210px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.recent-memo .memorial-container .memorial-carousel .damirifa_due {
+  /* font-family: 'Cathedral', sans-serif; */
+  font-family: "Copperplate Gothic Light", sans-serif;
+  position: absolute;
+  bottom: 36px;
+  left: 20px;
+  font-size: 36px;
+  color: #ffc09e;
+  opacity: 0.8;
+  width: 640px;
+}
+.recent-memo .memorial-container .memorial-carousel .carousel:hover {
+  animation-play-state: paused;
+}
+@keyframes sliding {
+  10% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-635px);
+  }
+  40% {
+    transform: translateX(-1255px);
+  }
+  50% {
+    transform: translateX(-1865px);
+  }
+  60% {
+    transform: translateX(-2490px);
+  }
+  70% {
+    transform: translateX(-3100px);
+  }
+  80% {
+    transform: translateX(-3720px);
+  }
+  90% {
+    transform: translateX(-4330px);
+  }
+  95% {
+    transform: translateX(-4950px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.other_memorials {
+  background-color: #000;
+}
+.other_memorials h3 {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Copperplate Gothic Light", sans-serif;
+  text-align: center;
+}
+.other_memorials .ribbon {
+  width: 305px;
+  margin: auto;
+  display: block;
+  padding: 15px 0;
+}
+.other_memorials ul {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 1200px;
+}
+.other_memorials ul li.memorials {
+  color: #ffffff;
+  width: 360px;
+  float: left;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.7;
+  border-right: 3px solid #643419;
+  padding-right: 20px;
+}
+.other_memorials ul li.memorials span {
+  display: block;
+}
+.other_memorials ul li.memorials span.year, .other_memorials ul li.memorials span.place {
+  color: #ccc;
+  font-size: 14px;
+}
+.other_memorials ul li.memorials .photo_frame {
+  float: left;
+  overflow: hidden;
+  height: 125px;
+}
+.other_memorials ul li.memorials .photo_frame img {
+  width: 120px;
+  float: left;
+  margin-right: 15px;
+}
+.other_memorials .recent-memorial-post {
+  padding: 50px 15px;
+}
+.other_memorials .recent-memorial-post .r-memorial-container {
+  display: flex;
+  gap: 15px;
+  width: 1215px;
+  flex-wrap: wrap;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post {
+  width: 292.5px;
+  height: auto;
+  padding: 0.6rem;
+  background-color: #ececec;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post .photo_frame {
+  height: 225px;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post .photo_frame img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  object-position: 0 -15px;
+  filter: grayscale(1);
+  transition: all 0.5s;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post .photo_frame img:hover {
+  filter: grayscale(0);
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post a:hover {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post a .memorials {
+  list-style: none;
+  position: relative;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post .info-container {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 100%;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post .info-container .name {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post .info-container .inner-div {
+  display: flex;
+  justify-content: space-between;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post .info-container .inner-div > div {
+  display: flex;
+  gap: 5px;
+}
+.other_memorials .recent-memorial-post .r-memorial-container .memorial-post .info-container .year, .other_memorials .recent-memorial-post .r-memorial-container .memorial-post .info-container .place {
+  font-size: 14px;
+  margin-left: 5 px;
+  color: #272727;
+  line-height: 1.7;
+}
+
+.tributes-section {
+  background-color: #89644b;
+  padding: 15px 15px 50px 15px;
+}
+.tributes-section .tributes-title h2 {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Copperplate Gothic Light", sans-serif;
+  text-align: center;
+}
+.tributes-section .tribute-card-wrapper {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.tributes-section .tribute-card-wrapper .tribute-card {
+  background-color: #fff;
+  padding: 1.5rem 0.8rem;
+  box-shadow: 1px 2px 10px #000000;
+  border-radius: 10px;
+}
+.tributes-section .tribute-card-wrapper .tribute-card .tribute-header {
+  display: grid;
+  place-items: center;
+}
+.tributes-section .tribute-card-wrapper .tribute-card .tribute-header img {
+  width: 50px;
+}
+.tributes-section .tribute-card-wrapper .tribute-card .tribute-header h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.tributes-section .tribute-card-wrapper .tribute-card .tribute-body {
+  margin-top: 15px;
+  height: 205px;
+  overflow: hidden;
+}
+.tributes-section .tribute-card-wrapper .tribute-card .tribute-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.tributes-section .tribute-card-wrapper .tribute-card .tribute-footer a {
+  background-color: #5a3d2b;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  transition: all 0.3s;
+}
+.tributes-section .tribute-card-wrapper .tribute-card .tribute-footer a:hover {
+  text-decoration: none;
+  background-color: #442b1b;
+  transform: translateY(-4px);
+}
+
+#wrapper {
+  display: block;
+  width: 960px;
+}
+
+#pagination {
+  margin: 25px 0;
+  padding: 0;
+  text-align: center;
+}
+
+#pagination li {
+  display: inline;
+}
+
+#pagination li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #000;
+}
+
+#pagination li a {
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  color: white;
+  font-size: 16px;
+}
+
+#pagination li a.active {
+  background-color: #f8c677;
+  color: #fff;
+}
+
+#pagination li a:hover:not(.active) {
+  background-color: #fcb23d;
+}
+
+.createlnk {
+  color: #f8c677;
+  background-color: #301e12;
+  padding: 10px 66px;
+  font-size: 16px;
+  transform: translateY(0);
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.8s;
+}
+.createlnk:hover {
+  color: #fcb23d;
+  background-color: #442b1b;
+  text-decoration: none;
+  transition: all 0.3s;
+  transform: translateY(-4px);
+}/*# sourceMappingURL=test.css.map */
