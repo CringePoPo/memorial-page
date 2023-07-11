@@ -56,9 +56,9 @@ ul#footerinner li{
 }
 .home .top_section{
     position: relative;
-    background: url(https://cdn.ghanaweb.com/memorial/assets/home_bg.jpg);
+    background: url(./bg-hero.jpg);
     background-repeat: no-repeat;
-    background-position-y: -60px;
+    /* background-position-y: -60px; */
     height: 340px;
 }
 .detail .top_section{
@@ -69,18 +69,21 @@ ul#footerinner li{
     height: 600px;
 }
 .createlnk {
-    color: #f8c677;
+    color: #fff;
     background-color: #301e12;
     padding: 10px 66px;
     font-size: 24px;
     transform: translateY(0);
-    border-radius: 5px;
+    background: linear-gradient(  rgba(107, 99, 99, 0.753),#39342e);
+
+    border-radius: 50px;
     display: inline-block;
     transition: all 0.8s;
   }
   .createlnk:hover {
-    color: #fcb23d;
-    background-color: #442b1b;
+    color: #e4e4e4;
+    background: linear-gradient(  rgba(117, 112, 112, 0.753),#46413b);
+
     text-decoration: none;
     transition: all 0.3s;
     transform: translateY(-4px);
@@ -95,24 +98,29 @@ ul#footerinner li{
 }
 img.couple_hug {
     position: absolute;
-    right: 120px;
+    right:0;
     bottom: 0;
     width: 310px;
 }
 .text_area {
     position: absolute;
     padding: 170px 0 0 120px;
-    width: 35%;
-    font-family: serif;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.text_area h1 {
-    color: #ffe3bd;
+/* .txt-link{
+    display:flex;
+    justify-content:center;
+} */
+.top_section .text_area h1{
+    margin: -50px 0 35px 0;
+    text-align: center;
+    color: #262626;
     font-size: 34px;
     text-transform: uppercase;
     font-weight: bold;
-}
-.top_section .text_area h1{
-    margin: -50px 0 35px 0;
 }
 hr{
     width: 100%;
@@ -255,7 +263,7 @@ span.name{
     text-align: center;
   }
   .other_memorials .ribbon {
-    width: 305px;
+    width: 220px;
     margin: auto;
     display: block;
     padding: 15px 0;
@@ -318,14 +326,14 @@ span.name{
     filter: grayscale(1);
     transition: all 0.3s;
   }
-  .other_memorials .recent-memorial-post .r-memorial-container .memorial-post .photo_frame img:hover {
+  /* .other_memorials .recent-memorial-post .r-memorial-container .memorial-post .photo_frame img:hover {
     filter: grayscale(0);
 
-  }
+  } */
   .other_memorials .recent-memorial-post .r-memorial-container .memorial-post a:hover {
     text-decoration: none;
     transition: all 0.3s;
-    color: #000;
+    color:#000;
   }
   .other_memorials .recent-memorial-post .r-memorial-container .memorial-post a .memorials {
     list-style: none;
