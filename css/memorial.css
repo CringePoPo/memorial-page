@@ -56,7 +56,7 @@ ul#footerinner li{
 }
 .home .top_section{
     position: relative;
-    background: url(./bg-hero.jpg);
+    background: url(../img/bg-hero.jpg);
     background-repeat: no-repeat;
     /* background-position-y: -60px; */
     height: 340px;
@@ -82,7 +82,7 @@ ul#footerinner li{
   }
   .createlnk:hover {
     color: #e4e4e4;
-    background: linear-gradient(  rgba(117, 112, 112, 0.753),#46413b);
+    background: linear-gradient(  rgba(109, 102, 102, 0.753),#46413b);
 
     text-decoration: none;
     transition: all 0.3s;
